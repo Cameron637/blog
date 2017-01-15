@@ -40,6 +40,6 @@ app.use((err, req, res, next) => {
     res.render('index', { title: '500', message: 'An unexpected error occured.' });
 });
 
-app.listen(80, () => {
-    console.log('Blog listening on port 80!');
+app.listen(3000, () => {
+    console.log('Blog listening on port 3000!');
 });
