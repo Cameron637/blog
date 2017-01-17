@@ -13,13 +13,13 @@ app.get('/', (req, res) => {
 });
 
 app.get('/:post', (req, res, next) => {
-    fetch(`http://localhost:3000/posts/${req.params.post}.json`)
-        .then(res => {
-            if (!res.ok) {
-                throw res.status;
+    fetch(`http://localhost:65307/posts/${req.params.post}.json`)
+        .then(response => {
+            if (!response.ok) {
+                throw response.status;
             }
 
-            return res.json();
+            return response.json();
         })
         .then(postJson => {
             res.render('index', { title: postJson.title, image: postJson.image, message: postJson.message.join('') });
@@ -40,6 +40,6 @@ app.use((err, req, res, next) => {
     res.render('index', { title: '500', message: 'An unexpected error occured.' });
 });
 
-app.listen(3000, () => {
-    console.log('Blog listening on port 3000!');
+app.listen(65307, () => {
+    console.log('Blog listening on port 65307!');
 });
