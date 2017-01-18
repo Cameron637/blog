@@ -67,7 +67,7 @@ h1, h2, h3, p {
 }
 
 .menu a:hover {
-    background-color: deepskyblue;
+    background-color: green;
 }
 
 .title h1 {
@@ -102,14 +102,22 @@ h1, h2, h3, p {
 
 .post p {
     font-size: 1.5rem;
+    margin: 1rem 0;
+    text-indent: 2rem;
 }
 
 .post .image {
+    margin: 1rem auto;
     width: 22rem;
 }
 
 .post img {
     width: 100%;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
 }
 
 footer {

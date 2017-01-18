@@ -5,7 +5,6 @@ html
     meta(name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=10.0, user-scalable=yes")
     title= title
     link(rel="author" href="https://plus.google.com/104418084167424329296")
-    link(rel="icon" href="resources/favicon.ico" type="image/x-icon")
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open Sans")
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto")
     link(rel="stylesheet" href="styles/index.css")
@@ -14,7 +13,7 @@ html
     header
         section.menu
             a(href="https://www.cameronjsanchez.com" onclick="ga('send', 'event', 'link', 'click', 'https://www.cameronjsanchez.com');") Home
-            a(href="https://blog.cameronjsanchez.com" onclick="ga('send', 'event', 'link', 'click', 'https://blog.cameronjsanchez.com');") Blog
+            a(href="/" onclick="ga('send', 'event', 'link', 'click', 'https://blog.cameronjsanchez.com');") Blog
             a(href="https://rm-planner.cameronjsanchez.com" target="_blank" onclick="ga('send', 'event', 'link', 'click', 'https://rm-planner.cameronjsanchez.com');") RM Planner
     main
         section.title
@@ -24,9 +23,14 @@ html
                 img(src= image)
             section.message!= message
             section.links
-                h1 Blog Posts
-                ul
-                    li #[a(href="https://blog.cameronjsanchez.com/first") First] 
+                section.en
+                    h1 Table of Contents
+                    ul
+                        li #[a(href="?lang=en&post=a-change-of-heart" onclick="ga('send', 'event', 'link', 'click', 'https://blog.cameronjsanchez.com?lang=en&post=a-change-of-heart');") A Change of Heart]
+                section.es
+                    h1 Tabla de contenido
+                    ul
+                        li #[a(href="?lang=es&post=un-cambio-de-corazon" onclick="ga('send', 'event', 'link', 'click', 'https://blog.cameronjsanchez.com?lang=es&post=un-cambio-de-corazon');") Un cambio de corazón] 
     footer
         div#contactInfo
             h2 You can contact me #[a(href="mailto:csanchez2237@gmail.com" target="_blank" onclick="ga('send', 'event', 'link', 'click', 'mailto:csanchez2237@gmail.com');") here]!

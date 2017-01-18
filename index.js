@@ -1,34 +1,20 @@
 'use strict';
 
 let express = require('express');
-let fetch = require('node-fetch');
 let app = express();
 
 app.set('view engine', 'pug');
 
 app.use(express.static(`${__dirname}/public`));
 
-app.get('/', (req, res) => {
-    res.render('index', { title: 'Cameron\'s Blog', message: "This blog is still under construction..." });
-});
-
-app.get('/:post', (req, res, next) => {
-    fetch(`http://localhost:65307/posts/${req.params.post}.json`)
-        .then(response => {
-            if (!response.ok) {
-                throw response.status;
-            }
-
-            return response.json();
-        })
-        .then(postJson => {
-            res.render('index', { title: postJson.title, image: postJson.image, message: postJson.message.join('') });
-        })
-        .catch(error => {
-            console.error(error);
-            next();
-        });
-
+app.get('/', (req, res, next) => {
+    try {
+        let post = require(`./posts/${req.query.lang || "en"}/${req.query.post || "default"}.json`);
+        res.render('index', { title: post.title, image: post.image, message: post.message.join('') });
+    } catch (error) {
+        console.error(error.stack);
+        next();
+    }
 });
 
 app.use((req, res, next) => {
