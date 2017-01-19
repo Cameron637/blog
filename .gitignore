@@ -1,1 +1,11 @@
+.DS_Store
 node_modules
+jspm_packages
+npm-debug.log
+*.css
+*.map
+!tools/node/**
+tools/node/**/.DS_Store
+main-bundle.js
+*.orig
+.vscode/chrome

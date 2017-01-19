@@ -9,7 +9,32 @@
   "author": "Cameron Sanchez",
   "license": "ISC",
   "dependencies": {
+    "compression": "^1.6.2",
     "express": "^4.14.0",
-    "pug": "^2.0.0-beta6"
+    "express-state": "^1.4.0",
+    "jade": "^1.11.0",
+    "jspm": "^0.16.48",
+    "less-middleware": "^2.2.0",
+    "serve-favicon": "^2.3.2",
+    "systemjs": "^0.19.42"
+  },
+  "devDependencies": {},
+  "jspm": {
+    "directories": {
+      "packages": "scripts/jspm_packages"
+    },
+    "configFile": "scripts/config.js",
+    "dependencies": {
+      "css": "github:systemjs/plugin-css@^0.1.32",
+      "fetch": "github:github/fetch@^2.0.1",
+      "jade": "github:johnsoftek/plugin-jade@^1.1.2",
+      "less": "npm:systemjs-less-plugin@^1.9.1"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "clean-css": "npm:clean-css@^3.4.19",
+      "core-js": "npm:core-js@^1.1.4"
+    }
   }
 }

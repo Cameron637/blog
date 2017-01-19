@@ -1,0 +1,38 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true,
+        "**/jspm_packages": true,
+        "**/tools": true,
+        "**/cert": true,
+        "**/etc": true,
+        "**/*.css": true,
+        "**/*.map": true,
+        "**/server": true,
+        "**/main-bundle.js": true,
+        "**/*.yml": true,
+        "**/.vscode/chrome/**": true
+    },
+    "search.exclude": {
+        "content/fonts": true,
+        "scripts/aws": true
+    },
+    // This must be false to enable correct formatting in Jade files.
+    "files.trimTrailingWhitespace": false,
+    "files.eol": "\n",
+    "editor.folding": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false,
+    "less.lint.duplicateProperties": "warning",
+    "less.lint.universalSelector": "warning",
+    "less.lint.zeroUnits": "error",
+    "less.lint.ieHack": "error",
+    "less.lint.unknownVendorSpecificProperties": "warning",
+    "less.lint.propertyIgnoredDueToDisplay": "error",
+    "less.lint.important": "error",
+    "javascript.suggest.useCodeSnippetsOnMethodSuggest": true,
+    "telemetry.enableTelemetry": false,
+    "svgviewer.transparencygrid": false
+}

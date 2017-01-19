@@ -1,0 +1,19 @@
+{
+	"version": "0.1.0",
+	"suppressTaskName": true,
+	"windows": {
+		"command": "powershell",
+		"args": [
+			"-Command"
+		]
+	},
+	"isShellCommand": true,
+	"tasks": [
+		{
+			"taskName": "1a) windows install",
+			"args": [
+				"ls node_modules -force -erroraction ignore | rm -force -recurse -erroraction ignore; rm node_modules -force -erroraction ignore; ls scripts/jspm_packages -force -recurse -erroraction ignore | rm -force -recurse -erroraction ignore; rm scripts/jspm_packages -force -erroraction ignore; npm install; npm dedupe; node node_modules/jspm/jspm.js install; echo 'Done installing'"
+			]
+		}
+	]
+}

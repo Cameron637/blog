@@ -1,0 +1,53 @@
+@import url("keyframes/keyframes");
+@import url("partials/footer");
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: black;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: none;
+    &::before {
+        animation: load 1.1s infinite linear;
+        border: 0.5rem solid green;
+        border-left: 0.5rem solid #FFFFFF;
+        border-radius: 50%;
+        content: "";
+        display: block;
+        height: 4rem;
+        margin: 5rem auto;
+        width: 4rem;
+    }
+    body {
+        display: none;
+        font-family: Roboto;
+        margin: 0;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        h1, h2, h3, p {
+            margin: 0;
+        }
+        main {
+            background-color: lightgray;
+            .inner {
+                padding: 1rem 2rem;
+            }
+        }
+    }
+    &.loaded {
+        body {
+            display: block;
+        }
+        &::before {
+            display: none;
+        }
+    }
+}
+
+@media(min-width: 512px) {
+    html body main .inner {
+        padding: 2rem 5rem;
+    }
+}

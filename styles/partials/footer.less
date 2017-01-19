@@ -1,0 +1,39 @@
+footer {
+    align-items: center;
+    background-color: darkslategray;
+    color: white;
+    display: block;
+    font-size: 1.5rem;
+    text-shadow: 0.1rem 0.1rem 0.2rem black;
+    div, p {
+        text-align: center;
+    }
+    p {
+        padding: 2rem 2rem 2rem 1rem;
+    }
+    #contactInfo {
+        padding: 2rem 1rem 2rem 2rem;
+        a {
+            color: deepskyblue;
+            text-decoration: none;
+        }
+        a:-webkit-any-link {
+            color: deepskyblue;
+            text-decoration: none;
+        }
+    }
+    #links {
+        padding: 2rem 1rem;
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+@media (min-width: 512px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}

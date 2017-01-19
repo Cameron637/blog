@@ -4,15 +4,37 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
-            "program": "${workspaceRoot}\\index.js",
-            "cwd": "${workspaceRoot}"
+            "name": "Debug Server",
+            "program": "${workspaceRoot}/index.js",
+            "cwd": "${workspaceRoot}",
+            "smartStep": true,
+            "console": "integratedTerminal"
         },
         {
-            "type": "node",
-            "request": "attach",
-            "name": "Attach to Process",
-            "port": 5858
+            "type": "chrome",
+            "request": "launch",
+            "name": "Debug Client",
+            "smartStep": true,
+            "webRoot": "${workspaceRoot}",
+            "url": "http://localhost:65307",
+            "sourceMaps": true,
+            "userDataDir": "${workspaceRoot}/.vscode/chrome",
+            "runtimeArgs": [
+                "--disable-session-crashed-bubble",
+                "--disable-infobars"
+            ],
+            "sourceMapPathOverrides": {
+                "http://localhost:65307*": "${workspaceRoot}*"
+            }
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Compound Debug",
+            "configurations": [
+                "Debug Server",
+                "Debug Client"
+            ]
         }
     ]
 }
