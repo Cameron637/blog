@@ -1,7 +1,8 @@
 import 'fetch';
 import menu from 'scripts/widgets/header/menu';
 import title from 'scripts/widgets/main/title';
-import tableOfContents from 'scripts/widgets/main/table-of-contents/table-of-contents';
+import tableOfContents from 'scripts/widgets/main/table-of-contents';
+import post from 'scripts/widgets/main/post';
 
 // Fetch does not need to be imported in any other file.
 window.fetch = fetch;
@@ -21,7 +22,7 @@ title.create();
 if (state.page.type === 'blog-home') {
     tableOfContents.create();
 } else if (state.page.type === 'blog') {
-    
+    post.create();
 }
 
 document.querySelector('html').classList.add('loaded');

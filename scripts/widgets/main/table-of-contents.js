@@ -1,7 +1,8 @@
-import response from 'scripts/helper/response';
+import response from 'scripts/helpers/response';
+import banner from 'scripts/widgets/main/banner';
 import containerTemplate from 'views/widgets/main/table-of-contents/container';
 import itemTemplate from 'views/widgets/main/table-of-contents/item';
-import 'styles/widgets/main/table-of-contents/table-of-contents';
+import 'styles/widgets/main/table-of-contents';
 
 let create = () => {
 	let title = state.page.lang === 'en' ? 'Table of Contents' : 'Tabla de Contenido';
@@ -18,12 +19,21 @@ let create = () => {
 		.then(response.getJson)
 		.then(contentData => {
 			if (state.page.lang === 'en') {
-				contentData.en.forEach(post => addListItem(container, post));
+				contentData.en.posts.forEach(post => addListItem(container, post));
+				console.log(contentData.en);
+				createBanner(contentData.en.backgroundImg);
 			} else if (state.page.lang === 'es') {
-				contentData.es.forEach(post =>  addListItem(container, post));
+				contentData.es.posts.forEach(post => addListItem(container, post));
+				createBanner(contentData.es.backgroundImg);
 			}
 		})
 		.catch(error => console.error(error));
+};
+
+let createBanner = backgroundImg => {
+	banner.create({
+		backgroundImg
+	});
 };
 
 let addListItem = (container, post) => {

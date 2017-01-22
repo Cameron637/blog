@@ -1,14 +1,20 @@
 {
-	"en": [
-		{
-			"title": "A Change of Heart",
-			"lang": "en"
-		}
-	],
-	"es": [
-		{
-			"title": "Un cambio de corazón",
-			"lang": "es"
-		}
-	]
+	"en": {
+		"backgroundImg": "banner-en.jpg",
+		"posts": [
+			{
+				"title": "A Change of Heart",
+				"lang": "en"
+			}
+		]
+	},
+	"es": {
+		"backgroundImg": "banner-es.jpg",
+		"posts": [
+			{
+				"title": "Un cambio de corazón",
+				"lang": "es"
+			}
+		]
+	}
 }

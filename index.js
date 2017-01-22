@@ -49,6 +49,7 @@ app.use(stylesDir, express.static(stylesPath));
 app.use('/scripts', express.static(path.join(__dirname, '/scripts')));
 app.use('/views', express.static(path.join(__dirname, '/views')));
 app.use('/pages', express.static(path.join(__dirname, '/pages')));
+app.use('/images', express.static(path.join(__dirname, '/images')));
 
 // Routes
 app.get('/', (req, res, next) => {
