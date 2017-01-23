@@ -1,0 +1,9 @@
+div.experience
+	header
+		div.titles
+			a.orgName(href=orgHref target="_blank" onclick="ga('send', 'event', 'link', 'click', '#{orgName}');")= orgName
+			h2 #{jobTitle}, <em>#{jobStart} &mdash; #{jobEnd}</em>
+			h3!= location
+		div.imageContainer(class="#{isLogo ? 'logo' : ''}")
+			img(src=src srcset=srcset sizes=sizes alt=altText)
+	p!= description

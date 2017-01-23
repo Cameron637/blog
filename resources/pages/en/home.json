@@ -1,0 +1,50 @@
+{
+	"type": "home",
+	"lang": "en",
+	"title": "Developer Story",
+	"backgroundImg": "banner-en.jpg",
+	"experiences": [
+		{
+			"orgName": "BYU Broadcasting",
+			"orgHref": "http://www.byub.org/",
+			"jobTitle": "Web Applications Developer",
+			"jobStart": "Fall 2015",
+			"jobEnd": "Present",
+			"location": "Provo, Utah",
+			"isLogo": true,
+			"src": "/resources/images/byutv-logo-128.png",
+			"srcset": "/resources/images/byutv-logo-128.png 128w, /resources/images/byutv-logo-256.png 256w, /resources/images/byutv-logo-512.png 512w, /resources/images/byutv-logo-768.png 768w, /resources/images/byutv-logo-1024.png 1024w, /resources/images/byutv-logo-1280.png 1280w",
+			"sizes": "12rem",
+			"altText": "See the good in the world.",
+			"description": "Working at BYU Broadcasting has been the most beneficial experience I've had at BYU. While my classes have helped me to think programatically, my on-the-job experience has helped me develop good coding habits and think outside the box when solving problems. <br /><br /><strong>Responsibilites and Achievements:</strong> Created a series of unit tests for all BYU Broadcasting REST APIs using <a href=\"http://frisbyjs.com/\" target=\"_blank\" onclick=\"ga('send', 'event', 'link', 'click', 'http://frisbyjs.com/');\">FrisbyJS</a>, worked with ASP.NET and JQuery on current BYUtv websites, helped design a new, responsive website (<em>coming soon</em>) from the ground up using <a href=\"http://jadelang.net/\" target=\"_blank\" onclick=\"ga('send', 'event', 'link', 'click', 'http://jadelang.net/');\">Jade</a> (<a href=\"https://github.com/pugjs/pug/issues/2184\" target=\"_blank\" onclick=\"ga('send', 'event', 'link', 'click', 'https://github.com/pugjs/pug/issues/2184');\">Pug</a>), <a href=\"http://lesscss.org/\" target=\"_blank\" onclick=\"ga('send', 'event', 'link', 'click', 'http://lesscss.org/');\">Less</a> and <a href=\"https://expressjs.com/\" target=\"_blank\" onclick=\"ga('send', 'event', 'link', 'click', 'https://expressjs.com/');\">ExpressJS</a>, and won a $500 employee scholarship."
+		},
+		{
+			"orgName": "The Church of Jesus Christ of Latter-Day Saints",
+			"orgHref": "https://www.lds.org/",
+			"jobTitle": "Full Time Volunteer",
+			"jobStart": "Spring 2012",
+			"jobEnd": "Spring 2014",
+			"location": "North Carolina &mdash; Durham, Clinton, Wilson, Mt. Olive",
+			"isLogo": false,
+			"src": "/resources/images/north-carolina-128.png",
+			"srcset": "/resources/images/north-carolina-128.png 128w, /resources/images/north-carolina-256.png 256w, /resources/images/north-carolina-512.png 512w, /resources/images/north-carolina-768.png 768w, /resources/images/north-carolina-1024.png 1024w, /resources/images/north-carolina-1280.png 1280w",
+			"sizes": "22rem",
+			"altText": "Home of Southern Hospitality and Barbecue.",
+			"description": "Being a missionary may not have much to do with Computer Science, but it has everything to do with who I've become over the last few years. For two years I served complete strangers every day for more than 14 hours a day. I would help them in any way possible, and teach those who were interested about the Gospel of Jesus Christ. A valuable skill I picked up here is Spanish-English and English-Spanish translation, which I did for both large meetings and small interviews."
+		},
+		{
+			"orgName": "Brigham Young University",
+			"orgHref": "https://home.byu.edu/home/",
+			"jobTitle": "BS in Computer Science",
+			"jobStart": "Fall 2011, Fall 2014",
+			"jobEnd": "Present",
+			"location": "Provo, Utah",
+			"isLogo": true,
+			"src": "/resources/images/byu-200.png",
+			"srcset": "/resources/images/byu-200.png 200w, /resources/images/byu-500.png 500w, /resources/images/byu-800.png 800w, /resources/images/byu-1100.png 1100w, /resources/images/byu-1400.png 1400w",
+			"sizes": "12rem",
+			"altText": "Enter to learn. Go forth to serve.",
+			"description": "Coming to BYU for my undergraduate degree was an excellent decision. Being here has challenged me to perform beyond what I thought I could do. Here I am privileged to have opportunities to grow not just in my understanding and love of Computer Science, but also in my faith and dedication to the Gospel of Jesus Christ. So far I've learned C++, C, assembly, data structures, and discrete mathemetics."
+		}
+	]
+}

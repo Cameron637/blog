@@ -15,16 +15,15 @@ let create = () => {
 
 	let container = document.querySelector(`#${id}`);
 
-	fetch('pages/table-of-contents.json')
+	fetch('/resources/pages/table-of-contents.json')
 		.then(response.getJson)
 		.then(contentData => {
 			if (state.page.lang === 'en') {
-				contentData.en.posts.forEach(post => addListItem(container, post));
-				console.log(contentData.en);
 				createBanner(contentData.en.backgroundImg);
+				contentData.en.posts.forEach(post => addListItem(container, post));
 			} else if (state.page.lang === 'es') {
-				contentData.es.posts.forEach(post => addListItem(container, post));
 				createBanner(contentData.es.backgroundImg);
+				contentData.es.posts.forEach(post => addListItem(container, post));
 			}
 		})
 		.catch(error => console.error(error));
@@ -38,7 +37,7 @@ let createBanner = backgroundImg => {
 
 let addListItem = (container, post) => {
 	container.insertAdjacentHTML('beforeend', itemTemplate({
-		href: `?lang=${post.lang}&post=${post.title.toLowerCase().replace(/\s/g, '-')}`,
+		href: `/blog/${post.title.toLowerCase().replace(/\s/g, '-')}?lang=${post.lang}`,
 		title: post.title
 	}));
 };

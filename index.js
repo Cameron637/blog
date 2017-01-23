@@ -48,16 +48,34 @@ app.use(stylesDir, express.static(stylesPath));
 // Scripts
 app.use('/scripts', express.static(path.join(__dirname, '/scripts')));
 app.use('/views', express.static(path.join(__dirname, '/views')));
-app.use('/pages', express.static(path.join(__dirname, '/pages')));
-app.use('/images', express.static(path.join(__dirname, '/images')));
+app.use('/resources', express.static(path.join(__dirname, '/resources')));
 
 // Routes
 app.get('/', (req, res, next) => {
+    let page = require(`./resources/pages/${req.query.lang || 'en'}/home.json`);
+
+    res.expose({
+        lang: page.lang,
+        title: page.title,
+        type: page.type
+    }, {
+        namespace: 'page',
+        isJSON: true,
+        cache: true
+    });
+
+    res.render('index', {
+        title: page.title
+    });
+});
+
+app.get('/blog/:post?', (req, res, next) => {
     try {
-        let page = require(`./pages/${req.query.lang || 'en'}/${req.query.post || 'default'}.json`);
+        let page = require(`./resources/pages/${req.query.lang || 'en'}/${req.params.post || 'default'}.json`);
 
         res.expose({
             lang: page.lang,
+            query: req.params.post,
             title: page.title,
             type: page.type
         }, {

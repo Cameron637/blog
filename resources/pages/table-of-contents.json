@@ -5,6 +5,10 @@
 			{
 				"title": "A Change of Heart",
 				"lang": "en"
+			},
+			{
+				"title": "Proud to be an American",
+				"lang": "en"
 			}
 		]
 	},
@@ -13,6 +17,10 @@
 		"posts": [
 			{
 				"title": "Un cambio de corazón",
+				"lang": "es"
+			},
+			{
+				"title": "Orgulloso de ser un americano",
 				"lang": "es"
 			}
 		]

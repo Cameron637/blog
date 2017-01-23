@@ -1,6 +1,7 @@
 import 'fetch';
 import menu from 'scripts/widgets/header/menu';
 import title from 'scripts/widgets/main/title';
+import story from 'scripts/widgets/main/story';
 import tableOfContents from 'scripts/widgets/main/table-of-contents';
 import post from 'scripts/widgets/main/post';
 
@@ -18,8 +19,9 @@ if (state.mode !== 'production') {
 
 menu.create();
 title.create();
-
-if (state.page.type === 'blog-home') {
+if (state.page.type === 'home') {
+    story.create();
+} else if (state.page.type === 'blog-home') {
     tableOfContents.create();
 } else if (state.page.type === 'blog') {
     post.create();

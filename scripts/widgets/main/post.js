@@ -7,7 +7,7 @@ import 'styles/widgets/main/post';
 let create = () => {
 	document.querySelector('main .inner').insertAdjacentHTML('afterbegin', containerTemplate());
 
-	fetch(`pages/${state.page.lang}/${state.page.title.toLowerCase().replace(/\s/g, '-')}.json`)
+	fetch(`/resources/pages/${state.page.lang}/${state.page.query}.json`)
 		.then(response.getJson)
 		.then(postData => {
 			if (state.mode !== 'production') {

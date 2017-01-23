@@ -1,0 +1,43 @@
+.experience {
+	background-color: lightgray;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+	a {
+		color: blue;
+		text-decoration: none;
+	}
+	.orgName {
+		color: teal;
+		font-family: Open Sans;
+		font-size: 3rem;
+	}
+	h2 {
+		color: saddlebrown;
+		font-size: 2rem;
+		margin-top: 1rem;
+	}
+	h3 {
+		margin: 1rem 0;
+	}
+	p {
+		font-size: 1.5rem;
+	}
+	.imageContainer {
+		width: 22rem;
+		img {
+			width: 100%;
+		}
+		&.logo {
+			width: 12rem;
+		}
+	}
+}
+
+@media (min-width: 512px) {
+	.experience {
+		header {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+}

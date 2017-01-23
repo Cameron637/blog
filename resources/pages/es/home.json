@@ -1,0 +1,50 @@
+{
+	"type": "home",
+	"lang": "es",
+	"title": "Historia del Desarrollador",
+	"backgroundImg": "banner-es.jpg",
+	"experiences": [
+		{
+			"orgName": "BYU Broadcasting",
+			"orgHref": "http://www.byub.org/",
+			"jobTitle": "Desarrollador de Aplicaciones Web",
+			"jobStart": "Otoño de 2015",
+			"jobEnd": "Presente",
+			"location": "Provo, Utah",
+			"isLogo": true,
+			"src": "/resources/images/byutv-logo-128.png",
+			"srcset": "/resources/images/byutv-logo-128.png 128w, /resources/images/byutv-logo-256.png 256w, /resources/images/byutv-logo-512.png 512w, /resources/images/byutv-logo-768.png 768w, /resources/images/byutv-logo-1024.png 1024w, /resources/images/byutv-logo-1280.png 1280w",
+			"sizes": "12rem",
+			"altText": "Vea lo bueno del mundo.",
+			"description": "Trabajar en BYU Broadcasting ha sido la experiencia más beneficiosa que he tenido en BYU. Mientras mis clases me han ayudado a pensar programaticamente, mi experiencia en el trabajo me ha ayudado a desarrollar buenos hábitos de codificación y pensar fuera de la caja al resolver problemas. <br /><br /><strong>Responsabilidades y logros: </strong>Creé una serie de pruebas unitarias para todos los API de REST de BYU Broadcasting usando <a href=\"http://frisbyjs.com/\" target=\"_blank\" onclick=\"ga('send', 'event', 'link', 'click', 'http://frisbyjs.com/');\">FrisbyJS</a>, trabajé con ASP.NET y JQuery en los sitios web actuales de BYUtv, ayudé a diseñar un nuevo sitio web adaptable (<em>viene pronto</em>) de la nada usando <a href=\"http://jadelang.net/\" target=\"_blank\" onclick=\"ga('send', 'event', 'link', 'click', 'http://jadelang.net/');\">Jade</a> (<a href=\"https://github.com/pugjs/pug/issues/2184\" target=\"_blank\" onclick=\"ga('send', 'event', 'link', 'click', 'https://github.com/pugjs/pug/issues/2184');\">Pug</a>), <a href=\"http://lesscss.org/\" target=\"_blank\" onclick=\"ga('send', 'event', 'link', 'click', 'http://lesscss.org/');\">Less</a> y <a href=\"https://expressjs.com/\" target=\"_blank\" onclick=\"ga('send', 'event', 'link', 'click', 'https://expressjs.com/');\">ExpressJS</a>, y gané una beca de 500 dólares para empleados."
+		},
+		{
+			"orgName": "La Iglesia de Jesucristo de los Santos de los Últimos Días",
+			"orgHref": "https://www.lds.org/",
+			"jobTitle": "Voluntario de tiempo completo",
+			"jobStart": "Primavera 2012",
+			"jobEnd": "Primavera 2014",
+			"location": "Carolina del Norte & mdash; Durham, Clinton, Wilson, Monte Olivo",
+			"isLogo": false,
+			"src": "/resources/images/north-carolina-128.png",
+			"srcset": "/resources/images/north-carolina-128.png 128w, /resources/images/north-carolina-256.png 256w, /resources/images/north-carolina-512.png 512w, /resources/images/north-carolina-768.png 768w, /resources/images/north-carolina-1024.png 1024w, /resources/images/north-carolina-1280.png 1280w",
+			"sizes": "22rem",
+			"altText": "Hogar de Hospitalidad del Sur y Barbacoa.",
+			"description": "Ser misionero no tiene mucho que ver con las ciencias de la computación, pero tiene mucho que ver con quién me he convertido en los últimos años. Durante dos años he servido a personas completamente desconocidas cada día durante más de 14 horas al día. Yo les ayudaba de cualquier manera posible, y les enseñaba a aquellos que estaban interesados ​​en el Evangelio de Jesucristo. Una buena habilidad que desarrollé aquí es la habilidad de traducción del español-inglés y del inglés-español, lo que hice para grandes reuniones y pequeñas entrevistas."
+		},
+		{
+			"orgName": "Universidad de Brigham Young",
+			"orgHref": "https://home.byu.edu/home/",
+			"jobTitle": "Licenciatura en Ciencias de la Computación",
+			"jobStart": "Otoño de 2011, otoño de 2014",
+			"jobEnd": "Presente",
+			"location": "Provo, Utah",
+			"isLogo": true,
+			"src": "/resources/images/byu-200.png",
+			"srcset": "/resources/images/byu-200.png 200w, /resources/images/byu-500.png 500w, /resources/images/byu-800.png 800w, /resources/images/byu-1100.png 1100w, /resources/images/byu-1400.png 1400w",
+			"sizes": "12rem",
+			"altText": "Entrar para aprender. Ve a servir.",
+			"description": "Llegar a BYU para mi licenciatura fue una excelente decisión. Estar aquí me ha desafiado a realizar más allá de lo que pensé que podía hacer. Aquí tengo el privilegio de tener oportunidades de crecer no sólo en mi entendimiento y amor por la Ciencia de la Computación, sino también en mi fe y dedicación al Evangelio de Jesucristo. Hasta ahora he aprendido C + +, C, ensamblaje, estructuras de datos y matematicas discretas."
+		}
+	]
+}
